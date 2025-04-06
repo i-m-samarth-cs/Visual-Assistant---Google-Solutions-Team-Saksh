@@ -1,0 +1,67 @@
+plugins {
+    alias(libs.plugins.android.application)
+}
+
+android {
+    namespace 'com.example.visualassistant'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.visualassistant"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Android core dependencies
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // Firebase ML Kit for text recognition (OCR)
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
+
+    // TensorFlow Lite for object detection
+    implementation 'org.tensorflow:tensorflow-lite-task-vision:0.4.4'
+    implementation 'org.tensorflow:tensorflow-lite:2.12.0'
+    implementation 'org.tensorflow:tensorflow-lite-support:0.4.3'
+    implementation 'org.tensorflow:tensorflow-lite-metadata:0.4.3'
+
+    // CameraX for camera functionalities
+    implementation 'androidx.camera:camera-core:1.2.3'
+    implementation 'androidx.camera:camera-camera2:1.2.3'
+    implementation 'androidx.camera:camera-lifecycle:1.2.3'
+    implementation 'androidx.camera:camera-view:1.2.3'
+
+    implementation 'com.google.mlkit:text-recognition-devanagari:16.0.0'
+    // Google Text-to-Speech API
+    implementation 'com.google.android.gms:play-services-auth:20.6.0'
+
+    // Voice recognition
+    implementation 'androidx.core:core:1.9.0'
+
+    implementation 'com.google.mlkit:vision-common:17.3.0'
+
+// Text recognition dependencies
+    implementation 'com.google.android.gms:play-services-mlkit-text-recognition:19.0.0'
+    implementation 'com.google.mlkit:text-recognition:16.0.0'
+
+// For Devanagari script (Hindi, Marathi, etc.)
+    implementation 'com.google.mlkit:text-recognition-devanagari:16.0.0'
+}

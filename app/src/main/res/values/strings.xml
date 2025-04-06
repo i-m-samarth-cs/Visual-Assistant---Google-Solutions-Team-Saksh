@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Visual Assistant</string>
+    <string name="welcome_message">Welcome to Visual Assistant. Say Navigate to detect obstacles, Read for text recognition, or Identify to identify objects around you.</string>
+    <string name="emergency_button">HOME</string>
+    <string name="emergency_button_description">Emergency button to return to home mode</string>
+    <string name="camera_permission_denied">Camera permission is required for this app to function properly</string>
+    <string name="audio_permission_denied">Microphone permission is required for this app to function properly</string>
+    <string name="app_title">VISUAL ASSISTANT</string>
+    <string name="home_button">HOME</string>
+    <string name="listening_status">Listening for commands...</string>
+    <string name="command_hint">Try saying: \'Identify\', \'Read\', \'Navigate\'</string>
+    <string name="mode_home">HOME</string>
+    <string name="mode_identify">IDENTIFY</string>
+    <string name="mode_read">READ</string>
+    <string name="mode_navigate">NAVIGATE</string>
+    <string name="processing_status">Processing...</string>
+    <string name="command_hint_text">Say: \'Navigate\', \'Read\', \'Identify\', \'Home\', or \'Stop\'</string>
+</resources>
